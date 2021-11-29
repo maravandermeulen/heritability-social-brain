@@ -51,9 +51,9 @@
 ## Overview
 This is the online publication package for the project
 
-[**`full-title`**](`manuscript-url`)
+[**`Genetic and environmental influences on structure of the social brain in childhood`**](`https://doi.org/10.1016/j.dcn.2020.100782`)
 
-which was conducted at `group-institution`.
+which was conducted at `Leiden Consortium on Individual Development, Leiden University, the Netherlands`.
 
 The publication package contains descriptions, code and data that aid reproducibility and transparency of the results.
 
@@ -124,7 +124,7 @@ Content in this publication package is shared under the `license-type` license. 
 
 When referring to the manuscript, please cite it as:
 
-> `manuscript-citation`
+> `van der Meulen, M., Wierenga, L.M., Achterberg, M., Drenth, N., van IJzendoorn, M.H., & Crone, E.A. (2020). Genetic and environmental influences on structure of the social brain in childhood. Developmental Cognitive Neuroscience, 44, 100782.`
 
 
 <div id="contribute"></div>
