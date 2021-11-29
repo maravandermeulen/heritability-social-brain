@@ -4,4 +4,4 @@
 
 ---
 
-`add-extra-detail-here`
+`The code consists of different scripts and syntaxes. First step etc etc.`
