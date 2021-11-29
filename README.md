@@ -115,14 +115,14 @@ The European General Data Protection Regulation (GDPR) prevents us from uploadin
 
 ## Materials summary
 
-`materials-summary`
+SEE PAPER
 
 
 <div id="methods"></div>
 
 ## Methods summary
 
-`methods-summary`
+SEE PAPER
 
 
 <div id="reproduce"></div>
