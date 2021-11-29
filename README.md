@@ -31,12 +31,6 @@
 <!-- Link for raw data; remove this section if not applicable -->
 [![Download the dataset](https://img.shields.io/badge/download-Raw%20data-9cf.svg)](`data-url`)
 
-<!-- Link for preprint; remove this section if not applicable -->
-[![Read this work](https://img.shields.io/badge/read-Preprint-brightgreen.svg)](`preprint-url`)
-
-<!-- Link for preregistration; remove this section if not applicable -->
-[![Read this work](https://img.shields.io/badge/read-Preregistration-ff69b4.svg)](`prereg-url`)
-
 <!-- Link for published manuscript; remove this section if not applicable -->
 [![Read this work](https://img.shields.io/badge/read-Published%20manuscript-red.svg)](https://doi.org/10.1016/j.dcn.2020.100782)
 
