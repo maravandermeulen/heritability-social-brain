@@ -93,10 +93,11 @@ and behavior.
 
 ## Data summary
 
-for this paper we used a sample of 512 participants. Since some participants missed data on either behavioral or neuroimaging measures, only subsets of participants were included in the final analyses. For a more thorough description see the methods section of the publication.
+For this paper we used a sample of 512 participants. Since some participants missed data on either behavioral or neuroimaging measures, only subsets of participants were included in the final analyses. For a more thorough description see the methods section of the publication.
 A flowchart of participant inclusion is visualized below.
+
 <!-- data summary figure, if available -->
-<img src="assets/Flowchart_participants.png" alt="data-figure" style="width: 90%; text-align: center"/>
+<img src="assets/Flowchart_participants.png" alt="data-figure" style="width: 60%; text-align: center"/>
 
 
 
