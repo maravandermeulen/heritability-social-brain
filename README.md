@@ -96,9 +96,12 @@ and behavior.
 For this paper we used a sample of 512 participants. Since some participants missed data on either behavioral or neuroimaging measures, only subsets of participants were included in the final analyses. For a more thorough description see the methods section of the publication.
 A flowchart of participant inclusion is visualized below.
 
+Figure 1. Flowchart of inclusion of samples (including demographic information) at various stages of the study.
 <!-- data summary figure, if available -->
 <img src="assets/Flowchart_participants.png" alt="data-figure" style="width: 60%; text-align: center"/>
-
+Note. MZ ¼ monozygotic twin pairs; 1 Diagnosed Axis-I disorders: ADHD and/or ADD (eight participants), PDD-NOS (one participant), generalized anxiety disorder
+(GAD; one participant); 2 Diagnosed Axis-I disorders: ADHD and/or ADD (six participants), PDD-NOS (one participant), GAD (one participant); 3 Diagnosed Axis-I
+disorders: ADHD and/or ADD (five participants), PDD-NOS (one participant), GAD (one participant).
 
 
 ### Data access
