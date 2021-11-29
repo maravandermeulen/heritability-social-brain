@@ -93,10 +93,12 @@ and behavior.
 
 ## Data summary
 
+for this paper we used a sample of 512 participants. Since some participants missed data on either behavioral or neuroimaging measures, only subsets of participants were included in the final analyses. For a more thorough description see the methods section of the publication.
+A flowchart of participant inclusion is visualized below.
 <!-- data summary figure, if available -->
-<img src="assets/fig2.png" alt="data-figure" style="width: 90%; text-align: center"/>
+<img src="assets/vanderMeulen_Figure1_DCN_R1.pdf" alt="data-figure" style="width: 90%; text-align: center"/>
 
-`data-summary`
+
 
 ### Data access
 
