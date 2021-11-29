@@ -23,9 +23,9 @@
 <!-- NOTE: the descriptions in this main readme file are intended to be summarising information. For more detailed information/instructions, add this to the respective README files in the appropriate individual folders -->
 
 
-# `Genetic and environmental influences on structure of the social brain in childhood`
+# Genetic and environmental influences on structure of the social brain in childhood
 
-*By: `Mara van der Meulen`*
+*By: Mara van der Meulen*
 
 
 <!-- Link for raw data; remove this section if not applicable -->
@@ -118,13 +118,13 @@ Where applicable, further details are supplied in individual `README.md` files i
 
 ## Citing this work
 
-Content in this publication package is shared under the `CC BY` license. When referring to this work, or when creating derivatives from it, please cite it as:
+Content in this publication package is shared under the CC BY license. When referring to this work, or when creating derivatives from it, please cite it as:
 
 > `publication-package-citation`
 
 When referring to the manuscript, please cite it as:
 
-> `van der Meulen, M., Wierenga, L.M., Achterberg, M., Drenth, N., van IJzendoorn, M.H., & Crone, E.A. (2020). Genetic and environmental influences on structure of the social brain in childhood. Developmental Cognitive Neuroscience, 44, 100782.`
+> van der Meulen, M., Wierenga, L.M., Achterberg, M., Drenth, N., van IJzendoorn, M.H., & Crone, E.A. (2020). Genetic and environmental influences on structure of the social brain in childhood. Developmental Cognitive Neuroscience, 44, 100782.
 
 
 <div id="contribute"></div>
