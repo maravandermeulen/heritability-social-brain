@@ -100,7 +100,9 @@ and behavior.
 
 ### Data access
 
-`data-access-statement`
+All data from this publication that can safely shared can be found in the DATA directory of this repository. 
+
+The European General Data Protection Regulation (GDPR) prevents us from uploading raw MRI data as this could compromise the privacy of research participants. For additional information please contact Mara van der Meulen: m.van.der.meulen@fsw.leidenuniv.nl
 
 
 <div id="materials"></div>
