@@ -118,7 +118,7 @@ Where applicable, further details are supplied in individual `README.md` files i
 
 ## Citing this work
 
-Content in this publication package is shared under the `license-type` license. When referring to this work, or when creating derivatives from it, please cite it as:
+Content in this publication package is shared under the `CC BY` license. When referring to this work, or when creating derivatives from it, please cite it as:
 
 > `publication-package-citation`
 
