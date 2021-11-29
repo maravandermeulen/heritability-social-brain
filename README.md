@@ -22,7 +22,7 @@
 
 <!-- NOTE: the descriptions in this main readme file are intended to be summarising information. For more detailed information/instructions, add this to the respective README files in the appropriate individual folders -->
 
-
+<!-- EDIT ALL INFO BELOW AS NECESSARY -->
 # Genetic and environmental influences on structure of the social brain in childhood
 
 *By: Mara van der Meulen*
