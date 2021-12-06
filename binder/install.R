@@ -1,0 +1,5 @@
+install.packages(“rmarkdown”)
+install.packages("ggpubr")
+install.packages("cowplot")
+install.packages("ggplot2")
+install.packages("dplyr")
