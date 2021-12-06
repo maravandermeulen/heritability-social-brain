@@ -59,7 +59,6 @@ setwd("../data")
 library("ggpubr")
 library("cowplot")
 library("ggplot2")
-library("dplyr")
 
 ## Open csv-file in R-studio, turn into data frame
 dataTwinR<- read.csv2("vanderMeulen_DCN_2020_Data_BehGen_Univariate_Brain.csv", header=T, sep=",", dec=".")
