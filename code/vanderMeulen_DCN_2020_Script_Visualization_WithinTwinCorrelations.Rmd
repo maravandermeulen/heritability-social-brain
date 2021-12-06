@@ -23,8 +23,7 @@ options(repos = list(CRAN="http://cran.rstudio.com/"))
 
 ## SET UP
 ```{r Set up, include=TRUE}
-#setwd("J:/Workgroups/FSW/Zwaartekracht/Papers/Mara van der Meulen/2020_vanderMeulen_DCN/0. PublicationPackage/5. Processed data files")
-setwd("J:/Workgroups/FSW/Zwaartekracht/Papers/Mara van der Meulen/2020_vanderMeulen_DCN/0. PublicationPackage/5. Processed data files")
+setwd("../data")
 
 
 ### LOADING DATA ###
