@@ -67,12 +67,12 @@ Prosocial behavior and empathy are important aspects of developing social relati
 showed protracted structural development of social brain regions associated with prosocial behavior. However, it
 remains unknown how structure of the social brain is influenced by genetic or environmental factors, and
 whether overlapping heritability factors explain covariance in structure of the social brain and behavior. The
-current study examined this hypothesis in a twin sample (aged 7–9-year; N ¼ 512). Bilateral measures of surface
+current study examined this hypothesis in a twin sample (aged 7–9-year; N = 512). Bilateral measures of surface
 area and cortical thickness of the medial prefrontal cortex (mPFC), temporo-parietal junction (TPJ), posterior
 superior temporal sulcus (pSTS), and precuneus were analyzed. Results showed genetic contributions to surface
 area and cortical thickness for all brain regions. We found additional shared environmental influences for TPJ,
 suggesting that this region might be relatively more sensitive to social experiences. Genetic factors also influenced
-parent-reported prosocial behavior (A ¼ 45%) and empathy (A ¼ 59%). We provided initial evidence that
+parent-reported prosocial behavior (A = 45%) and empathy (A = 59%). We provided initial evidence that
 the precuneus shares genetically determined variance with empathy, suggesting a possible small genetic overlap
 (9%) in brain structure and empathy. These findings show that structure of the social brain and empathy are
 driven by a combination of genetic and environmental factors, with some factors overlapping for brain structure
@@ -118,7 +118,7 @@ See publication in __Developmental Cognitive Neuroscience_._
 
 ## Reproducing the results
 
-`reproducibility-summary`
+The visualisation of the within-twin correlations of brain structure (as reported in the Supplementary files, Figure S1) can be reproduced by 
 
 
 <div id="cite"></div>
