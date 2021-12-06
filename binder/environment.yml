@@ -1,0 +1,9 @@
+channels:
+  - conda-forge
+dependencies:
+  - r-base=4.1.1
+  - r-rmarkdown
+  - r-ggpubr
+  - r-cowplot
+  - r-ggplot2
+  - r-dplyr
