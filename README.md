@@ -108,8 +108,7 @@ The European General Data Protection Regulation (GDPR) prevents us from uploadin
 
 ## Materials summary
 
-SEE PAPER
-
+See publication in ___Developmental Cognitive Neuroscience_._
 
 <div id="methods"></div>
 
