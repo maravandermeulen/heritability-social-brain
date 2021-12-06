@@ -114,7 +114,7 @@ See publication in __Developmental Cognitive Neuroscience_._
 
 ## Methods summary
 
-SEE PAPER
+See publication in __Developmental Cognitive Neuroscience_._
 
 
 <div id="reproduce"></div>
