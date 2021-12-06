@@ -37,7 +37,7 @@
 <!-- Link to Binder environment; remove this section if not applicable -->
 [![Reproduce results](https://img.shields.io/badge/reproduce-Results-blueviolet.svg)](`binder-url`)
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jsheunis/heritability-social-brain/HEAD?urlpath=notebooks/code/vanderMeulen_DCN_2020_Script_Visualization_WithinTwinCorrelations.Rmd)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/maravandermeulen/heritability-social-brain/HEAD?urlpath=notebooks/code/vanderMeulen_DCN_2020_Script_Visualization_WithinTwinCorrelations.Rmd)
 
 
 
