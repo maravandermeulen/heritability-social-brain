@@ -121,6 +121,8 @@ See publication in __Developmental Cognitive Neuroscience_._
 The visualisation of the within-twin correlations of brain structure (as reported in the Supplementary files, Figure S1) can be reproduced by clicking the button
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/maravandermeulen/heritability-social-brain/HEAD?urlpath=notebooks/code/vanderMeulen_DCN_2020_Script_Visualization_WithinTwinCorrelations.Rmd) and running the code.
 
+To reproduce the results of the behavioral genetic modelling, follow the manual in the folder _Results._
+
 
 <div id="cite"></div>
 
