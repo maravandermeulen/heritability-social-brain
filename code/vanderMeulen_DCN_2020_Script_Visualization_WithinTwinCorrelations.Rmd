@@ -1,0 +1,204 @@
+---
+title: "vanderMeulen_DCN_2020_Script_Visualization_Correlations"
+author: "Mara van der Meulen"
+date: "2-12-2021"
+output:
+  html_document: default
+  word_document: default
+  pdf_document: default
+---
+
+## Script for univariate behavioral genetics analyses in 
+## "Genetic and environmental influences on structure of the social brain in childhood"
+## Published in Developmental Cognitive Neuroscience (2020)
+## The plots generated with this script were reported in the supplementary materials.
+
+## by Mara van der Meulen - 2020 
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+options(repos = list(CRAN="http://cran.rstudio.com/"))
+```
+
+## SET UP
+```{r Set up, include=TRUE}
+#setwd("J:/Workgroups/FSW/Zwaartekracht/Papers/Mara van der Meulen/2020_vanderMeulen_DCN/0. PublicationPackage/5. Processed data files")
+setwd("J:/Workgroups/FSW/Zwaartekracht/Papers/Mara van der Meulen/2020_vanderMeulen_DCN/0. PublicationPackage/5. Processed data files")
+
+
+### LOADING DATA ###
+# Please note: In order to take into account effects of age, sex, and IQ on behavior and structural measures of the social brain, 
+# we performed regression analyses on all outcome measures, with age, sex, and IQ as predictor variables.
+# We then used the unstandardized residuals as variables in our subsequent analyses.
+
+
+
+# For univariate analyses on heritability of bilateral brain structure, use file "vanderMeulen_DCN_2020_Data_BehGen_Univariate_Brain.csv"
+## variables for surface area
+### mPFC_SA_WINS_RES 
+### TPJ_SA_RES
+### pSTS_SA_RES 
+### Precuneus_SA_RES 
+### Cuneus_SA_RES
+### Lingual_SA_RES
+
+## variables for cortical thickness
+### mPFC_CT_RES 
+### TPJ_CT_WINS_RES 
+### pSTS_CT_RES 
+### Precuneus_CT_RES
+### Cuneus_CT_RES 
+### Lingual_CT_WINS_RES 
+
+#If necessary, install the packages below.
+#install.packages("ellipsis")
+#install.packages("ggpubr")
+#install.packages("car")
+
+# Open required packages
+library("ggpubr")
+library("cowplot")
+library("ggplot2")
+library("dplyr")
+
+## Open csv-file in R-studio, turn into data frame
+dataTwinR<- read.csv2("vanderMeulen_DCN_2020_Data_BehGen_Univariate_Brain.csv", header=T, sep=",", dec=".")
+dataTwinR<-data.frame(dataTwinR)
+
+dataTwinR$Zygosity<-as.factor(dataTwinR$Zygosity)
+```
+
+### VISUALIZE WITHIN TWIN CORRELATIONS 
+```{r mPFC, include=TRUE}
+mPFC_SA <- ggscatter(dataTwinR, x = "mPFC_SA_WINS_RES_C1", y = "mPFC_SA_WINS_RES_C2",
+                     add = "reg.line",                         # Add regression line
+                     color = "Zygosity", palette = c("black","green"),      # Color by groups  
+                     shape = "Zygosity",                       # Change point shape by groups 
+                     size = 5,
+                     xlab = "Twin 1", ylab = "Twin 2") + ylim(-200, 200) + xlim (-200, 200)
+  stat_cor(aes(color = Zygosity), method = "pearson",  cor.coef.name = "r", label.x = 3)           # Add correlation coefficient
+
+mPFC_CT <- ggscatter(dataTwinR, x = "mPFC_CT_RES_C1", y = "mPFC_CT_RES_C2",
+                     add = "reg.line",                         # Add regression line
+                     color = "Zygosity", palette = c("black","green"),      # Color by groups  
+                     shape = "Zygosity",                       # Change point shape by groups 
+                     size = 5,
+                     xlab = "Twin 1", ylab = "Twin 2") + ylim(-0.8, 0.8) + xlim (-0.8, 0.8)
+  stat_cor(aes(color = Zygosity), method = "pearson",  cor.coef.name = "r", label.x = 3)           # Add correlation coefficient
+
+ggarrange(mPFC_SA, mPFC_CT, #combine the figures
+          labels = c("mPFC Surface Area", "mPFC Cortical Thickness"), 
+          ncol = 2, nrow = 1) 
+```
+
+
+```{r TPJ, include=TRUE}
+TPJ_SA <- ggscatter(dataTwinR, x = "TPJ_SA_RES_C1", y = "TPJ_SA_RES_C2",
+                     add = "reg.line",                         # Add regression line
+                     color = "Zygosity", palette = c("black","blue"),      # Color by groups  
+                     shape = "Zygosity",                       # Change point shape by groups 
+                     size = 5,
+                     xlab = "Twin 1", ylab = "Twin 2") + ylim(-600, 600) + xlim (-800, 800)
+  stat_cor(aes(color = Zygosity), method = "pearson",  cor.coef.name = "r", label.x = 3)           # Add correlation coefficient
+
+TPJ_CT <- ggscatter(dataTwinR, x = "TPJ_CT_WINS_RES_C1", y = "TPJ_CT_WINS_RES_C2",
+                     add = "reg.line",                         # Add regression line
+                     color = "Zygosity", palette = c("black","blue"),      # Color by groups  
+                     shape = "Zygosity",                       # Change point shape by groups 
+                     size = 5,
+                     xlab = "Twin 1", ylab = "Twin 2") + ylim(-0.8, 0.8) + xlim (-0.8, 0.8)
+  stat_cor(aes(color = Zygosity), method = "pearson",  cor.coef.name = "r", label.x = 3)           # Add correlation coefficient
+
+ggarrange(TPJ_SA, TPJ_CT, #combine the figures
+          labels = c("TPJ Surface Area", "TPJ Cortical Thickness"), 
+          ncol = 2, nrow = 1) 
+```
+
+```{r pSTS, include=TRUE}
+pSTS_SA <- ggscatter(dataTwinR, x = "pSTS_SA_RES_C1", y = "pSTS_SA_RES_C2",
+                     add = "reg.line",                         # Add regression line
+                     color = "Zygosity", palette = c("black","orange"),      # Color by groups  
+                     shape = "Zygosity",                       # Change point shape by groups 
+                     size = 5,
+                     xlab = "Twin 1", ylab = "Twin 2") + ylim(-400, 400) + xlim (-600, 600)
+  stat_cor(aes(color = Zygosity), method = "pearson",  cor.coef.name = "r", label.x = 3)           # Add correlation coefficient
+
+pSTS_CT <- ggscatter(dataTwinR, x = "pSTS_CT_RES_C1", y = "pSTS_CT_RES_C2",
+                     add = "reg.line",                         # Add regression line
+                     color = "Zygosity", palette = c("black","orange"),      # Color by groups  
+                     shape = "Zygosity",                       # Change point shape by groups 
+                     size = 5,
+                     xlab = "Twin 1", ylab = "Twin 2") + ylim(-0.6, 0.6) + xlim (-0.6, 0.6)
+  stat_cor(aes(color = Zygosity), method = "pearson",  cor.coef.name = "r", label.x = 3)           # Add correlation coefficient
+
+ggarrange(pSTS_SA, pSTS_CT, #combine the figures
+          labels = c("pSTS Surface Area", "pSTS Cortical Thickness"), 
+          ncol = 2, nrow = 1) 
+```
+
+```{r Precuneus, include=TRUE}
+Precuneus_SA <- ggscatter(dataTwinR, x = "Precuneus_SA_RES_C1", y = "Precuneus_SA_RES_C2",
+                     add = "reg.line",                         # Add regression line
+                     color = "Zygosity", palette = c("black","yellow"),      # Color by groups  
+                     shape = "Zygosity",                       # Change point shape by groups 
+                     size = 5,
+                     xlab = "Twin 1", ylab = "Twin 2") + ylim(-1200, 1200) + xlim (-1200, 1200)
+  stat_cor(aes(color = Zygosity), method = "pearson",  cor.coef.name = "r", label.x = 3)           # Add correlation coefficient
+
+Precuneus_CT <- ggscatter(dataTwinR, x = "Precuneus_CT_RES_C1", y = "Precuneus_CT_RES_C2",
+                     add = "reg.line",                         # Add regression line
+                     color = "Zygosity", palette = c("black","yellow"),      # Color by groups  
+                     shape = "Zygosity",                       # Change point shape by groups 
+                     size = 5,
+                     xlab = "Twin 1", ylab = "Twin 2") + ylim(-0.6, 0.6) + xlim (-0.6, 0.6)
+  stat_cor(aes(color = Zygosity), method = "pearson",  cor.coef.name = "r", label.x = 3)           # Add correlation coefficient
+
+ggarrange(Precuneus_SA, Precuneus_CT, #combine the figures
+          labels = c("Precuneus Surface Area", "Precuneus Cortical Thickness"), 
+          ncol = 2, nrow = 1) 
+```
+
+```{r Cuneus, include=TRUE}
+Cuneus_SA <- ggscatter(dataTwinR, x = "Cuneus_SA_RES_C1", y = "Cuneus_SA_RES_C2",
+                     add = "reg.line",                         # Add regression line
+                     color = "Zygosity", palette = c("black","pink"),      # Color by groups  
+                     shape = "Zygosity",                       # Change point shape by groups 
+                     size = 5,
+                     xlab = "Twin 1", ylab = "Twin 2") + ylim(-500, 500) + xlim (-500, 500)
+  stat_cor(aes(color = Zygosity), method = "pearson",  cor.coef.name = "r", label.x = 3)           # Add correlation coefficient
+
+Cuneus_CT <- ggscatter(dataTwinR, x = "Cuneus_CT_RES_C1", y = "Cuneus_CT_RES_C2",
+                     add = "reg.line",                         # Add regression line
+                     color = "Zygosity", palette = c("black","pink"),      # Color by groups  
+                     shape = "Zygosity",                       # Change point shape by groups 
+                     size = 5,
+                     xlab = "Twin 1", ylab = "Twin 2") + ylim(-0.6, 0.6) + xlim (-0.6, 0.6)
+  stat_cor(aes(color = Zygosity), method = "pearson",  cor.coef.name = "r", label.x = 3)           # Add correlation coefficient
+
+ggarrange(Cuneus_SA, Cuneus_CT, #combine the figures
+          labels = c("Cuneus Surface Area", "Cuneus Cortical Thickness"), 
+          ncol = 2, nrow = 1) 
+```
+
+```{r Lingual, include=TRUE}
+Lingual_SA <- ggscatter(dataTwinR, x = "Lingual_SA_RES_C1", y = "Lingual_SA_RES_C2",
+                     add = "reg.line",                         # Add regression line
+                     color = "Zygosity", palette = c("black","purple"),      # Color by groups  
+                     shape = "Zygosity",                       # Change point shape by groups 
+                     size = 5,
+                     xlab = "Twin 1", ylab = "Twin 2") + ylim(-1100, 1100) + xlim (-1100, 1100)
+  stat_cor(aes(color = Zygosity), method = "pearson",  cor.coef.name = "r", label.x = 3)           # Add correlation coefficient
+
+Lingual_CT <- ggscatter(dataTwinR, x = "Lingual_CT_WINS_RES_C1", y = "Lingual_CT_WINS_RES_C2",
+                     add = "reg.line",                         # Add regression line
+                     color = "Zygosity", palette = c("black","purple"),      # Color by groups  
+                     shape = "Zygosity",                       # Change point shape by groups 
+                     size = 5,
+                     xlab = "Twin 1", ylab = "Twin 2") + ylim(-0.6, 0.6) + xlim (-0.6, 0.6)
+  stat_cor(aes(color = Zygosity), method = "pearson",  cor.coef.name = "r", label.x = 3)           # Add correlation coefficient
+
+ggarrange(Lingual_SA, Lingual_CT, #combine the figures
+          labels = c("Lingual Surface Area", "Lingual Cortical Thickness"), 
+          ncol = 2, nrow = 1) 
+```
