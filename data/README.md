@@ -1,6 +1,6 @@
 # Data
 
-*This folder contains all data (derived from the raw dataset) that are necessary to reproduce the study's results*
+*This folder contains three datafiles (derived from the raw dataset) that are necessary to reproduce the study's results*
 
 ---
 
