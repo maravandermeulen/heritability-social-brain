@@ -41,9 +41,9 @@
 ## Overview
 This is the online publication package for the project
 
-[**`Genetic and environmental influences on structure of the social brain in childhood`**](`https://doi.org/10.1016/j.dcn.2020.100782`)
+[**Genetic and environmental influences on structure of the social brain in childhood**](`https://doi.org/10.1016/j.dcn.2020.100782`)
 
-which was conducted at `Leiden Consortium on Individual Development, Leiden University, the Netherlands`.
+which was conducted at Leiden Consortium on Individual Development, Leiden University, the Netherlands.
 
 The publication package contains descriptions, code and data that aid reproducibility and transparency of the results.
 
@@ -96,9 +96,11 @@ disorders: ADHD and/or ADD (five participants), PDD-NOS (one participant), GAD (
 
 ### Data access
 
-All data from this publication that can safely shared can be found in the DATA directory of this repository. 
+Data that was used to generate the results and figures in the publication can be found in the DATA directory of this repository. 
+Raw data can be accessed at [insert link Dataverse publication package].
 
-The European General Data Protection Regulation (GDPR) prevents us from uploading raw MRI data as this could compromise the privacy of research participants. For additional information please contact Mara van der Meulen: m.van.der.meulen@fsw.leidenuniv.nl
+Note that the European General Data Protection Regulation (GDPR) prevents us from sharing raw MRI data as this could compromise the privacy of research participants. 
+For additional information please contact Mara van der Meulen at m.van.der.meulen@fsw.leidenuniv.nl
 
 
 <div id="materials"></div>
