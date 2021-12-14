@@ -6,7 +6,7 @@ This folder contains all code used to process the data to generate the study's r
 
 *Step 1. Questionnaire data*
 
-The syntax 'vanderMeulen_DCN_2020_Syntax_Questionnaires.sps' was used to check reliability of the original parent-reported prosocial behavior scales, perform principal component analyses, and create new subscales for parent-reported prosocial behavior & empathy. 
+The syntax `vanderMeulen_DCN_2020_Syntax_Questionnaires.sps` was used to check reliability of the original parent-reported prosocial behavior scales, perform principal component analyses, and create new subscales for parent-reported prosocial behavior & empathy. 
 The accompanying file with raw data can be accessed via [link to Dataverse publication package]. Output from this syntax was used in subsequent steps.
 
 ---
