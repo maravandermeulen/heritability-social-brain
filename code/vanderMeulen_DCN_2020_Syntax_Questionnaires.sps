@@ -4,8 +4,10 @@
 *### Syntax written and edited by Mara van der Meulen ###.
 
 *This syntax includes:
-* selection of participants for behavioral genetics analyses on behavioral data.
-* computation of within-twin correlations.
+* checks of reliability of original parent-reported prosocial behavior scales
+* principal component analyses
+* creation of new subscales for parent-reported prosocial behavior & empathy
+* correlation analyses between original subscales of SDQ and MC questionnaires and newly created subscales for parent-reported prosocial behavior & empathy
 
 * Please note:
  *# Translation of items and answering options is available in separate document (under "Measures")
